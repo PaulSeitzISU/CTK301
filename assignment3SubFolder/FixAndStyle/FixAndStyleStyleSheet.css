@@ -1,0 +1,67 @@
+p {
+  font-weight: bold;
+}
+
+li{
+  font-weight: bold;
+
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+color: blue;
+}
+
+h3 {
+  background-color: yellow;
+}
+
+h4 {
+  color: yellow;
+  background-color: green;
+}
+
+h5 {
+  color: red;
+}
+
+
+
+.orangeTextClass{
+  color: orange;
+}
+
+.redTextClass{
+  color: red;
+}
+
+.blueTextClass{
+  color: blue;
+}
+
+.greenTextClass{
+  background-color: limegreen;
+}
+
+header {
+  background-color: lightblue;
+}
+
+footer {
+  background-color: yellow;
+}
+
+a{
+  color: green;
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+
+}
