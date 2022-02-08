@@ -1,0 +1,86 @@
+
+.customtext {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(disk.png);
+  background-repeat: repeat;
+
+
+}
+
+
+img {
+  width: auto;
+max-height: 256px;
+border: 10px solid black;
+padding: 10px;
+background-color: white;
+}
+
+h1 {
+  background-color: #12dd99
+}
+
+p {
+  background-color: blue
+}
+
+
+header{
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+main {
+  color: lightblue;
+  background-color: navy
+}
+
+footer {
+  background-color: red;
+}
+
+/* Requirements
+red by default
+yellow on hover
+green on visited */
+
+a {
+ color: #ff0000;
+}
+
+a:visited {
+ color: #00ff00;
+}
+
+a:hover {
+ color: #ffff00;
+}
+
+
+#thisClass {
+  color: #8210E1;
+  background-color: #FCFFC2;
+}
+
+.thisId {
+  color: lime;
+  background-color: brown;
+}
+
+.JustifyText{
+  text-align: justify;
+}
+
+.CenterText{
+  text-align: center;
+}
+
+.thisSpan{
+  font-weight: bold;
+  color: yellow;
+}
