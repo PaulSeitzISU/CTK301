@@ -1,3 +1,8 @@
+@font-face {
+  font-family: BlackoutMidnight;
+  src: url(fonts\Blackout-Midnight.ttf) format('truetype'));
+}
+
 body {
   background-color: black;
 }
@@ -76,6 +81,21 @@ text-align: right;
   background-size: contain;
   background-repeat: no-repeat;
   grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.displaypiece {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  grid-column: 2 / span 6;
+}
+
+.displaypieceAlt {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  grid-column: 6 / span 6;
 }
 
 .showpiece:hover {
@@ -92,7 +112,21 @@ text-align: right;
  margin-top: 0px;
  grid-column: 8 / 12 ;
  text-align: right;
+ font-family: 'Bitter', serif;
 
+}
+
+.displayPictureText {
+ margin-top: 80px;
+ grid-column: 8 / 12 ;
+ font-family: 'Bitter', serif;
+
+}
+
+.displayPictureTextAlt {
+ margin-top: 80px;
+ grid-column: 2 / 6 ;
+ font-family: 'Bitter', serif;
 
 }
 
@@ -105,6 +139,16 @@ text-align: right;
 }
 
 .footerLinkImages {
+  height: 24px;
+  weight: 24px;
+  margin-top: 12px;
+  margin-left: 12px;
+  float: right;
+}
+
+.footerLinkText {
+  color: white;
+  font-size: 24px;
   height: 24px;
   weight: 24px;
   margin-top: 12px;
@@ -127,7 +171,7 @@ text-align: right;
 h1 {
   color: white;
   font-size: 4em;
-  font-family: "Arial Black", sans-serif;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
 }
 
 p {
