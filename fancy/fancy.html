@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fancy Example</title>
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+<link rel="stylesheet" href="fancy.css">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Fancy Example</h1>
+    <a
+      href="https://lipsum.app/id/1/1024x768"
+      data-fancybox="gallery"
+      data-caption="Optional caption"
+    >
+      Image
+    </a>
+
+
+    <div id="mygallary">
+          <a href="patch.jpg" data-fancybox="gallery" data-caption="patch" >         <img src="patch_thumb.jpg" alt="patch">   </a>
+          <a href="icecream.jpg" data-fancybox="gallery" data-caption="ice cream" >  <img src="icecream_thumb.jpg" alt="icecream"></a>
+          <a href="water.jpg" data-fancybox="gallery" data-caption="water" >         <img src="water_thumb.jpg" alt="water"></a>
+    </div>
+
+    <div id="myCarousel" class="carousel">
+      <div class="carousel__slide"> <a href="patch.jpg" data-fancybox="gallary" data-caption="patch" >         <img src="patch.jpg" alt="patch"></a></div>
+      <div class="carousel__slide"> <a href="icecream.jpg" data-fancybox="gallary" data-caption="ice cream" >  <img src="icecream.jpg" alt="icecream"></a></div>
+      <div class="carousel__slide"> <a href="water.jpg" data-fancybox="gallary" data-caption="water" >         <img src="water.jpg" alt="water"></a></div>
+    </div>
+
+  </div>
+  <script>
+  const myCarousel = new Carousel(document.querySelector("#myCarousel"), {
+// Your options go here
+});
+  </script>
+</body>
+</html>
