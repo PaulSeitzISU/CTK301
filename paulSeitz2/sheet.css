@@ -84,6 +84,17 @@ text-align: right;
   transition: background-image .75S;
 }
 
+.displayGame{
+  height: auto;
+  width: auto;
+  grid-column: 3 / 9;
+}
+
+.gameLinks{
+  grid-column: 5 / 9;
+  text-align:  center;
+}
+
 .displaypiece {
   margin-top: 40px;
   height: 314px;
@@ -96,6 +107,8 @@ text-align: right;
   height: 314px;
   width: auto;
   grid-column: 6 / span 6;
+  float: right;
+
 }
 
 .showpiece:hover {
