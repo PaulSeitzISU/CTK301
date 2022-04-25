@@ -100,6 +100,7 @@ text-align: right;
   height: 314px;
   width: auto;
   grid-column: 2 / span 6;
+  align-items: center;
 }
 
 .displaypieceAlt {
@@ -108,7 +109,8 @@ text-align: right;
   width: auto;
   grid-column: 6 / span 6;
   float: right;
-
+  
+  align-items: center;
 }
 
 .showpiece:hover {
