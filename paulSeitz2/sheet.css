@@ -114,7 +114,7 @@ text-align: right;
   margin-top: 40px;
   height: 314px;
   width: auto;
-  background-image: url(img/slimegamegif.gif);
+  background-image: url(img/nightCrawlGif.gif);
   background-size: contain;
   background-repeat: no-repeat;
   grid-column: 2 / span 6;
@@ -185,7 +185,6 @@ height: auto;
 
 .displaypiece {
     margin:auto;
-  margin-top: 0px;
   height: 314px;
   width: auto;
   grid-column: 2 / span 6;
@@ -193,13 +192,38 @@ height: auto;
 
 .displaypieceAlt {
     margin:auto;
-  margin-top: 0px;
   height: 314px;
   width: auto;
   grid-column: 6 / span 6;
   float: right;
-
 }
+
+.displaypieceSmall {
+    margin:auto;
+  grid-column: 2 / span 6;
+}
+
+.displaypieceSmallAlt {
+    margin:auto;
+  grid-column: 6 / span 6;
+  float: right;
+}
+
+
+.displayAudio {
+  margin:auto;
+  margin-top: 6em;
+  grid-column: 2 / span 6;
+}
+
+.displayAudioAlt {
+  margin:auto;
+  grid-column: 6 / span 6;
+  float: right;
+}
+
+
+
 .bottompadding{
   padding-bottom: 2em;
 }
@@ -241,7 +265,6 @@ height: auto;
 
 
 .spacer{
-
   display: block;
   grid-column: span 12;
   float: left;
