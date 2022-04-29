@@ -1,6 +1,6 @@
 @font-face {
   font-family: BlackoutMidnight;
-  src: url(fonts\Blackout-Midnight.ttf) format('truetype');
+  src: url(fonts/Blackout-Midnight.ttf) format('truetype');
 }
 
 body {
@@ -60,20 +60,22 @@ text-align: right;
 }
 
 .h1top {
-  text-align: right;
+  text-align: left;
   grid-column: 2 / span 2;
   margin-bottom: 0px;
   margin-block-end: 0em;
 }
 
 .h1bot {
-  text-align: left;
+  text-align: right;
   grid-column: 4  / span 2;
   margin-bottom: 0px;
   margin-block-start: 0em;
 }
 
 .showpiece {
+  border: 4px solid white;
+  border-radius: 15px;
   margin-top: 40px;
   height: 314px;
   width: auto;
@@ -84,35 +86,6 @@ text-align: right;
   transition: background-image .75S;
 }
 
-.displayGame{
-  height: auto;
-  width: auto;
-  grid-column: 3 / 9;
-}
-
-.gameLinks{
-  grid-column: 5 / 9;
-  text-align:  center;
-}
-
-.displaypiece {
-  margin-top: 40px;
-  height: 314px;
-  width: auto;
-  grid-column: 2 / span 6;
-  align-items: center;
-}
-
-.displaypieceAlt {
-  margin-top: 40px;
-  height: 314px;
-  width: auto;
-  grid-column: 6 / span 6;
-  float: right;
-  
-  align-items: center;
-}
-
 .showpiece:hover {
   margin-top: 40px;
   height: 314px;
@@ -121,6 +94,125 @@ text-align: right;
   background-size: contain;
   background-repeat: no-repeat;
   grid-column: 2 / span 6;
+
+}
+
+.showpieceNightCrawl {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homescreenNightCrawl.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceNightCrawl:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/slimegamegif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+}
+
+.showpieceBaseballDerby {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/wip.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceBaseballDerby:hover {
+  margin-top: 40px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/wip.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 2 / span 6;
+}
+
+.showpieceAlt {
+  border: 4px solid white;
+  border-radius: 15px;
+  margin-top: 80px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/homescreen2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 6 / span 6;
+  transition: background-image .75S;
+}
+
+.showpieceAlt:hover {
+  margin-top: 80px;
+  height: 314px;
+  width: auto;
+  background-image: url(img/slimegamegif.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-column: 6 / span 6;
+
+}
+
+.displayGame{
+
+  width: 800px;
+height: auto;
+  margin: auto;
+  grid-column: span 12;
+}
+
+.gameLinks{
+  grid-column: 5 / 9;
+  text-align:  center;
+  margin-bottom: 0;
+}
+
+.displaypiece {
+    margin:auto;
+  margin-top: 0px;
+  height: 314px;
+  width: auto;
+  grid-column: 2 / span 6;
+}
+
+.displaypieceAlt {
+    margin:auto;
+  margin-top: 0px;
+  height: 314px;
+  width: auto;
+  grid-column: 6 / span 6;
+  float: right;
+
+}
+.bottompadding{
+  padding-bottom: 2em;
+}
+
+.paulseitz {
+  height:   32em;
+  width: auto;
+}
+
+.paulseitzAlt
+{
+
+  font-size: 2em;
 }
 
 .mainPictureText {
@@ -132,17 +224,27 @@ text-align: right;
 }
 
 .displayPictureText {
- margin-top: 80px;
+ margin: 1em;
+ margin-top: 20px;
  grid-column: 8 / 12 ;
  font-family: 'Bitter', serif;
 
 }
 
 .displayPictureTextAlt {
- margin-top: 80px;
+  margin: 1em;
+ margin-top: 20px;
  grid-column: 2 / 6 ;
  font-family: 'Bitter', serif;
 
+}
+
+
+.spacer{
+
+  display: block;
+  grid-column: span 12;
+  float: left;
 }
 
 .footerDiv {
@@ -183,10 +285,44 @@ text-align: right;
   grid-column: 3;
 }
 
-h1 {
+
+.title{
   color: white;
   font-size: 4em;
   font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+  grid-column: span 12;
+  margin-top:;
+  margin-bottom: 0px;
+}
+
+
+
+img {
+
+  border-radius: 15px;
+  border: 4px solid white;
+}
+
+video {
+
+  border-radius: 15px;
+  border: 4px solid white;
+}
+
+h1 {
+  color: white;
+  font-size: 6em;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  grid-column:  2 / span 4;
+  margin-bottom: 0em;
+}
+
+h2 {
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
 }
 
 p {
@@ -194,17 +330,28 @@ p {
 
 }
 
+p a {
+  color: white;
+  font-family: "Arial Black", sans-serif;
+
+}
+
+p a:hover {
+  color: grey;
+
+}
 
 li a {
   /* border: 1px solid red; */
   color: white;
-  font-family: "Arial Black", sans-serif;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
   text-decoration: none;
+  font-size: 1.2em;
 }
 
 nav {
   grid-column: span 12;
-  margin-top: 24px;
+  margin-top: 0px;
   margin-bottom: 24px;
   width: 1124px;
 }
