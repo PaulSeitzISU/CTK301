@@ -7,6 +7,7 @@ body {
   background-color: black;
 }
 
+
 header {
   grid-template-columns: repeat(12,1fr);
 }
@@ -262,13 +263,21 @@ height: auto;
  font-family: 'Bitter', serif;
 
 }
-
+.form{
+  display: block;
+  border: 4px solid white;
+  border-radius: 15px;
+  grid-column: span 12;
+  margin: auto;
+}
 
 .spacer{
   display: block;
   grid-column: span 12;
   float: left;
 }
+
+
 
 .footerDiv {
   border-top: 2px solid white;
@@ -319,7 +328,21 @@ height: auto;
   margin-bottom: 0px;
 }
 
+.contactLink {
+  text-decoration: solid underline white 2px;
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
 
+.contactLink:hover {
+  text-decoration: solid underline lightgrey 2px;
+  margin-top: 60px;
+  color: lightgrey;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
 
 img {
 
@@ -348,6 +371,18 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  margin-top: 60px;
+  color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-align: center;
+}
+
+h4 {
+
+    font-size: 1em;
+}
+
 p {
   color: white;
 
@@ -367,6 +402,14 @@ p a:hover {
 li a {
   /* border: 1px solid red; */
   color: white;
+  font-family: "BlackoutMidnight", "Arial Black", sans-serif;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+li a:hover {
+  /* border: 1px solid red; */
+  color: lightgrey;
   font-family: "BlackoutMidnight", "Arial Black", sans-serif;
   text-decoration: none;
   font-size: 1.2em;
